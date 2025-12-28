@@ -1,8 +1,6 @@
 {
   "name": "fb-live-stream",
   "version": "1.0.0",
-  "description": "Streaming to Facebook",
-  "main": "index.js",
   "scripts": {
     "start": "ffmpeg -re -user_agent 'Mozilla/5.0' -i 'http://194.76.0.164/8zpo3GsVY7/beneficial2concern/274122?token=ShJdY2ZmQQNHCmMZCDZXUh9GSHAWGFMD.ZDsGQVN.WGBFNX013GR9YV1QbGBp0QE9SWmpcXlQXXlUHWlcbRxFACmcDY1tXEVkbVAoAAQJUFxUbRFldAxdeUAdaVAFcUwcHAhwWQlpXQQMLTFhUG0FQQU1VQl4HWTsFVBQLVABGCVxEXFgeEVwNZgFcWVlZBxcDGwESHERcFxETWAxCCQgfEFNZQEBSRwYbX1dBVFtPF1pWRV5EFExGWxMmJxVJRlZKRVVaQVpcDRtfG0BLFU8XUEpvQlUVQRYEUA8HRUdeEQITHBZfUks8WgpXWl1UF1xWV0MSCkQERk0TDw1ZDBBcQG5AXVYRCQ1MCVVJ' -vcodec libx264 -preset superfast -g 60 -keyint_min 60 -sc_threshold 0 -b:v 2500k -acodec aac -ar 44100 -b:a 128k -f flv 'rtmps://live-api-s.facebook.com:443/rtmp/FB-1375352467709159-0-Ab3X56rXgX2u_B1nggdj6YpI'"
   },
