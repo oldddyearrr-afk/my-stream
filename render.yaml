@@ -1,0 +1,6 @@
+services:
+  - type: worker
+    name: facebook-live
+    runtime: python
+    buildCommand: apt-get update && apt-get install ffmpeg -y
+    startCommand: ffmpeg -re -user_agent "Mozilla/5.0" -i "رابط_البث_الذي_تملكه" -c:v libx264 -preset superfast -g 60 -keyint_min 60 -sc_threshold 0 -b:v 2000k -c:a aac -ar 44100 -f flv "rtmps://live-api-s.facebook.com:443/rtmp/مفتاح_بث_فيسبوك"
